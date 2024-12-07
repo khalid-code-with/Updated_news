@@ -1,0 +1,212 @@
+/* 
+nav{
+display: flex;
+align-items: center;
+justify-content: space-around;
+background-color: lightblue;
+padding: 9px;
+text-decoration: none;
+}
+nav input{
+  width: 250px;
+  text-decoration: none;
+  padding: 9px;
+  font-size: 18px;
+  border: none;
+}
+.searchBar{
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+.categorybtn {
+  display: flex;
+  justify-content:space-around; 
+
+  margin-left:30vh; 
+  margin-right: 30vh; 
+
+}
+
+.categorybtn button {
+  width: 19vh;
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 18px;
+  color: #ffffff;
+}
+
+nav ul{
+  display: flex;
+  gap: 11px;
+  text-decoration: none;
+  
+}
+.btn{
+  padding: 1.30vh;
+}
+input{
+  border-radius: 10px;
+  text-decoration: none;
+  outline: none;
+}
+.head{
+  padding: 2vh;
+  text-align: center;
+  font-weight: 600;
+  font-size:34px;
+  color: #000000b3;
+
+}
+.cardcontainer{
+  display: flex;
+  justify-content: center;
+  gap: 41px;
+  flex-wrap: wrap;
+}
+.cur{
+  cursor: pointer;
+} */
+
+/* Existing styles */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: lightblue;
+  padding: 9px;
+  text-decoration: none;
+  flex-wrap: wrap; /* Added to handle smaller screens */
+
+}
+
+nav input {
+  width: 250px;
+  text-decoration: none;
+  padding: 9px;
+  font-size: 18px;
+  border: none;
+}
+
+.searchBar {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.categorybtn {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 10px; /* Adjusted for responsiveness */
+  margin-right: 10px; /* Adjusted for responsiveness */
+  flex-wrap: wrap; /* Allow buttons to wrap */
+}
+
+.categorybtn button {
+  width: 19vh;
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 18px;
+  color: #ffffff;
+}
+
+nav ul {
+  display: flex;
+  gap: 11px;
+  text-decoration: none;
+  flex-wrap: wrap; /* Allow navigation links to wrap */
+}
+
+.btn {
+  padding: 1.30vh;
+}
+
+input {
+  border-radius: 10px;
+  text-decoration: none;
+  outline: none;
+}
+
+.head {
+  padding: 2vh;
+  text-align: center;
+  font-weight: 600;
+  font-size: 34px;
+  color: #000000b3;
+}
+
+.cardcontainer {
+  display: flex;
+  justify-content: center;
+  gap: 41px;
+  flex-wrap: wrap; /* Allow cards to wrap */
+}
+
+.cur {
+  cursor: pointer;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column; /* Stack items vertically */
+  }
+
+  .searchBar {
+    justify-content: center; /* Center the search bar */
+  }
+
+  .categorybtn {
+    margin-left: 0;
+    margin-right: 0;
+    justify-content: center; /* Center buttons */
+  }
+
+  .categorybtn button {
+    width: 100px; /* Reduce button width */
+    height: 40px; /* Reduce button height */
+  }
+
+  .head {
+    font-size: 24px; /* Adjust font size for smaller screens */
+  }
+
+  .cardcontainer {
+    gap: 20px; /* Reduce gap between cards */
+  }
+}
+
+@media (max-width: 480px) {
+  nav input {
+    width: 200px; /* Further reduce input width */
+    font-size: 16px; /* Adjust font size */
+  }
+
+  .categorybtn button {
+    width: 80px; /* Further reduce button size */
+    height: 35px;
+  }
+
+  .head {
+    font-size: 20px; /* Adjust header font size */
+  }
+}
+body{
+
+  
+  background: linear-gradient(to left, rgba(210, 101, 101, 0.676), rgba(68, 208, 68, 0.712))
+
+}
+.gap_icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
